@@ -1,21 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node16",
     "strict": true,
     "esModuleInterop": true,
     "downlevelIteration": true,
-    "rootDirs": [
-      "."
-    ],
-    "outDir": ".",
+    "rootDirs": [ ".", "./src" ],
+    "outDir": "../output-test",
     "sourceMap": false,
     "noUnusedLocals": true,
-    "declaration": true,
+    "declaration": false,
     "declarationMap": false
   },
-  "include": [
-    "."
-  ],
-  "exclude": ["node_modules", "./*.d.ts", "./test/*.d.ts"]
+  "include": [ "./**/*.ts" ],
 }

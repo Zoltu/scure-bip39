@@ -1,9 +1,3 @@
-/wordlists
-/src/wordlists/*.d.ts
-/src/wordlists/*.js
-/src/index.js
-/src/index.d.ts
-/index.js
-/index.d.ts
-/test/*.d.ts
-/test/*.js
+/node_modules
+/output
+/output-test

@@ -5,12 +5,12 @@ import {
   mnemonicToSeed,
   mnemonicToSeedSync,
   validateMnemonic,
-} from '..';
-import { wordlist as englishWordlist } from '../wordlists/english';
-import { wordlist as japaneseWordlist } from '../wordlists/japanese';
-import { wordlist as spanishWordlist } from '../wordlists/spanish';
+} from '../src/index.js';
+import { wordlist as englishWordlist } from '../src/wordlists/english.js';
+import { wordlist as japaneseWordlist } from '../src/wordlists/japanese.js';
+import { wordlist as spanishWordlist } from '../src/wordlists/spanish.js';
 import { bytesToHex as toHex } from '@noble/hashes/utils';
-import { deepStrictEqual, throws } from './assert';
+import { deepStrictEqual, throws } from './assert.js';
 import { it, describe } from 'micro-should';
 
 export function equalsBytes(a: Uint8Array, b: Uint8Array): boolean {
